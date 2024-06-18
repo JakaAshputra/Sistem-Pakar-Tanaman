@@ -1,0 +1,174 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {
+        height:auto;
+      } 
+    }
+
+    @media (min-width: 768px) {
+      .row.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+  }
+
+ .modal-header, h4, .close {
+      background-color: #3b5998;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+
+  .nav-btn {
+    background-color:#3b5998; 
+    border-color:#3b5998;
+    color:#fff;
+    padding: 10px 8px;
+  }
+
+  .nav-btn:hover {
+    color:#9d9d9d;
+  }
+
+  body {
+    height: 100%;
+    min-height: 100hv;
+  }
+
+  .about-layout .box-layout{
+    display: flex;
+    flex-direction: column;
+    width:100%; 
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .logo {
+    max-width: 50px;
+    border-radius: 100%;
+    margin: 10px;
+  }
+
+  .navbar-toggle {
+    margin-top: 13px;
+  }
+
+  footer {
+    color: white;
+    padding: 15px;
+    background-color: #22c1c3;
+  }
+
+  .btn-submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero {
+  background-image: url('./hero/Hero.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(59,89,152,1) 100%);
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #45a049;
+}
+
+.card {
+  max-width:300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 50px 50px 0;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 0 20px 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-header {
+  background-color: #22c1c3;
+}
